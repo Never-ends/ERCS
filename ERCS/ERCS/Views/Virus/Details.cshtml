@@ -1,0 +1,13 @@
+﻿@model ERCS.ViewModels.VirusVMs.VirusVM
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.VirusName" />
+<wt:display field="Entity.VirusCode" />
+<wt:display field="Entity.VirusRemark" />
+<wt:display field="Entity.VirusType" />
+</wt:row>
+    <wt:row align=" AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

@@ -1,0 +1,13 @@
+﻿@model ERCS.ViewModels.ReportVMs.ReportVM
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:textbox field="Entity.Temprature" />
+<wt:textbox field="Entity.Remark" />
+<wt:combobox field="Entity.PatientID" items="AllPatients"/>
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>
